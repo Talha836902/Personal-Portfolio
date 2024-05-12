@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="images/portpng.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/portpng.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <span id="animation"></span>
+                <!-- <p>Web Developer </p> -->
+                <h1>Hi, I'm <span>Talha <br> Soomro</span> From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------about---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/my-2nd-pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti inventore soluta et nulla iste numquam nobis omnis voluptatem distinctio placeat nemo, esse beatae. Ex qui autem distinctio nameius quos.</p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">================================
+                            <ul>
+                                <li><span>Web And Mobile App Development</span><br>Html, Css, Bootstrap, Firebase, Javascript, React.js, Next.js, Node.js, Internet Browsing .</li>
+                                <li><span>CIT</span><br>Excel, Word, Urdu/English typeing, Notepad, Powerpoint, Photocopy&Printing .</li>
+                                <li><span>Amazon FBA</span><br>Product Hunting, Product selling .</li>
+                                <li><span>English Language</span><br>Letters,  Words,  Sentence,  Speech/paragraph, English Speaking, English Grammer .</li>
+                                <li><span>Graphic Designing</span><br>Banner, Poster, Logo Design .</li>                                    
+                                <li><span>Video Editing</span><br>Color Grading, Motion Graphics, Cartoon Animator .</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                             <li><span>2023 - current</span><br>Worked Experience as a Floor in Charge Internship ARY Film & TV Productions .</li>
+                                <li><span>2020 - 2022</span><br>Worked Experience as a Key Punch Operator APAG Soya Supreme .</li>
+                                <li><span>2018 - 2020</span><br>Worked Experience as a Computer Operator Yahoo Computer .</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020</span><br>Matriculation</li>
+                                <li><span>2022</span><br>Intermediate</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- --------------------Services Section---------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime architecto, voluptas.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>Data Entry Operator</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime architecto, voluptas.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- <div>
+                <i class="fa-solid fa-video"></i>
+                <h2>Cartoon Animation Video</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime architecto, voluptas.</p>
+                <a href="#">Learn More</a>
+            </div> -->
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Graphic Designing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime architecto, voluptas.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------Porfolio-------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/fb.png" alt="">
+                <div class="layer">
+                    <h3>Facebook Signup Page Clone</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos reprehenderit nisi enim quod aut doloribus eius odit officia.</p>
+                    <a href="https://facebook-login-ten-tawny.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/stopwatch.png" alt="">
+                <div class="layer">
+                    <h3>Stopwatch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos reprehenderit nisi enim quod aut doloribus eius odit officia.</p>
+                    <a href="https://talha836902.github.io/stop_watch/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/calcu.png" alt="">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos reprehenderit nisi enim quod aut doloribus eius odit officia.</p>
+                    <a href="https://talha836902.github.io/Calculator/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="./port.html" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- -----------------------Contact------------------------------------ -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>talhaasifmf786@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 03444416538</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mtalha.asif.7"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://youtube.com/@Techify786"><i class="fa-brands fa-youtube-square"></i></a>
+                    <a href="https://twitter.com/talhaasifmf786"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/mtalha.asif.7/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/talha-soomro-654234274/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Talha836902"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.tiktok.com/@talhaasif2736"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <a href="images/My.cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message Here"></textarea>
+                    <button type="submit" class="btn btn2">SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Created <i class="fa-solid fa-heart"></i> By Talha Soomro</p>
+        <a href="#header" class="arr"><i class="fa-solid fa-circle-up"></i></a>
+    </div>
+</div>
+
+
+
+<script src="app.js"></script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzqjb3ZMy0bOixX1Y_4WGBLMtQ4I1Gs3Y5y7_LQ5C4D-65e1WmfHJ_3tmHLj91-7ukPjA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#animation', {
+        strings: ['<i>Web Developer</i>', '<i>Video animation</i>' ,'<i>Graphic Designer</i>'],
+        typeSpeed: 50,
+    });
+</script>
+</body>
+
+</html>
